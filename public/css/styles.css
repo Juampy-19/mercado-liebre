@@ -1,0 +1,491 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-left{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.nav-bar-left li{
+    margin-right: 15px;
+}
+
+.nav-bar-right{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.nav-bar-right li{
+    margin-right: 15px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.banner img{
+    width: 100%;
+    display: flex;
+}
+
+header{
+    background-color: var(--amarillo);
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logo{
+    width: 50%;
+    padding: 15px;
+    display: flex;
+}
+
+.search-bar{
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+
+.search-bar input{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-bar i{
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+
+.leyenda{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.burger-menu{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.fa-bars{
+    background-color: var(--celeste);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+main{
+    background-color: var(--gris-claro);
+}
+
+.titulares{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+}
+
+.productos a{
+    text-decoration: none;
+    color: black;
+}
+
+.precio{
+    font-size: 18px;
+    display: inline;
+    width: 30%;
+    margin-right: 15px;
+}
+
+.descuento{
+    font-size: 16px;
+    color: var(--verde);
+    display: inline;
+    width: 70%;
+}
+
+.descripcion{
+    font-size: 16px;
+    visibility: hidden;
+}
+
+.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.card-cafetera{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.description-card-cafetera{
+    border-top: solid 1px var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+.card-macbook{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.description-card-macbook{
+    border-top: solid 1px var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+.card-samsung-galaxy{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.description-card-samsung-galaxy{
+    border-top: solid 1px var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+.card-samsung-smart{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.description-card-samsung-smart{
+    border-top: solid 1px var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.credit-card{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fa-credit-card{
+    color: var(--celeste);
+    font-size: 2em;
+}
+
+.gift{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fa-gift{
+    color: var(--celeste);
+    font-size: 2em;
+}
+
+.user-shield{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fa-user-shield{
+    color: var(--celeste);
+    font-size: 2em;
+}
+
+
+.footer{
+    text-align: center;
+}
+
+.copyright{
+    padding: 10px;
+}
+
+/* Mobile */
+@media(max-width: 424px){    
+    .nav-bar{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media(min-width: 425px){
+    .burger-menu{
+        display: none;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    } 
+
+    .main-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-cafetera{
+        width: 40%;
+    }
+
+    .card-macbook{
+        width: 40%;
+    }
+
+    .card-samsung-galaxy{
+        width: 40%;
+    }
+
+    .card-samsung-smart{
+        width: 40%;
+    }
+
+    .copyright{
+        text-align: left;
+    }
+}
+
+/* Descktop */
+@media(min-width: 768px){
+    .main-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: flex;
+        width: 30%;
+    }
+
+    .search-bar{
+        width: 30%;
+    }
+
+    .leyenda{
+        display: flex;
+        width: 30%;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .card-cafetera:hover{
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 0.5s;
+    }
+
+    .card-macbook:hover{
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 0.5s;
+    }
+
+    .card-samsung-galaxy:hover{
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 0.5s;
+    }
+
+    .card-samsung-smart:hover{
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 0.5s;
+    }
+
+    .card-cafetera:hover .descripcion{
+        visibility: visible;
+    }
+
+    .card-macbook:hover .descripcion{
+        visibility: visible;
+    }
+
+    .card-samsung-galaxy:hover .descripcion{
+        visibility: visible;
+    }
+
+    .card-samsung-smart:hover .descripcion{
+        visibility: visible;
+    }
+
+    .card-cafetera:hover .fa-truck{
+        transform: rotateZ(-90deg);
+        transition: 0.5s;
+    }
+
+    .card-macbook:hover .fa-truck{
+        transform: rotateZ(-90deg);
+        transition: 0.5s;
+    }
+
+    .card-samsung-galaxy:hover .fa-truck{
+        transform: rotateZ(-90deg);
+        transition: 0.5s;
+    }
+
+    .card-samsung-smart:hover .fa-truck{
+        transform: rotateZ(-90deg);
+        transition: 0.5s;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-cafetera{
+        width: 20%;
+    }
+
+    .card-macbook{
+        width: 20%;
+    }
+
+    .card-samsung-galaxy{
+        width: 20%;
+    }
+
+    .card-samsung-smart{
+        width: 20%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .credit-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        text-align: center;
+    }
+
+    .fa-credit-card:hover{
+        color: var(--verde);
+        transition: 0.5s;
+    }
+
+    .fa-gift:hover{
+        color: var(--verde);
+        transition: 0.5s;
+    }
+
+    .fa-user-shield:hover{
+        color: var(--verde);
+        transition: 0.5s;
+    }
+
+    .gift{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        text-align: center;
+    }
+
+    .user-shield{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        text-align: center;
+    }
+
+    .copyright{
+        text-align: left;
+    }
+}
